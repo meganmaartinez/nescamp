@@ -27,7 +27,3 @@
     <h2 id="phrase" style="color: red;"></h2>
 </body>
 </html>
-git add index.html
-git commit -m "Añadir archivo index.html con el código proporcionado"
-git push origin main
-
