@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Reclama tu premio!</title>
+    <script>
+        function getRandomPhrase() {
+            const phrases = [
+                "¡Soy el rey/la reina de los incentivos!",
+                "¡Nadie me gana en esta trivia, ni en la vida!",
+                "¡Dulces, chocolates y premios, todo para mí!",
+                "¡Viva Nestlé y su plataforma de lealtad!",
+                "¡Ahorita paso por mi premio, no se preocupen!",
+                "¡Denme un aumento por este esfuerzo!",
+                "¡Gané, pero sigo esperando mi bono de puntualidad!",
+                "¡Yo ya gané, pero ustedes todavía pueden intentarlo!"
+            ];
+            
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            document.getElementById("phrase").innerText = phrases[randomIndex];
+        }
+    </script>
+</head>
+<body onload="getRandomPhrase()" style="text-align: center; font-family: Arial, sans-serif; padding: 50px;">
+    <h1>¡Grita la siguiente frase para obtener tu premio!</h1>
+    <h2 id="phrase" style="color: red;"></h2>
+</body>
+</html>
